@@ -1,0 +1,68 @@
+<!--YARA ALINE GUZMÁN GARCÍA 22-1792-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Calculadora de Interés</title>
+ 
+</head>
+<body>
+<form id="formulario" name="" method="post">
+
+<h1><center>Calculadora de Interés Simple</center></h1>
+
+<h3>Por favor Considere nuestras tasas de Interés:</h3>
+<table>
+    <tr>
+        <td><strong>Cuotas</strong></td>
+        <td><strong>    % de Interés   </strong></td> <!--Hice una tabla en este espacio para que el usuario considere las tatarias de interés-->
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>2.5%</td>
+    </tr>
+
+    <tr>
+        <td>6</td>
+        <td>5%</td>
+    </tr>
+
+    <tr>
+        <td>9</td>
+        <td>10%</td>
+    </tr>
+</table>
+
+<br>
+
+<h4>*NOTA: Por favor al momento de ingresar el dato del interes debe ingresarlo dividido dentro de 100</h4>
+<h4>Es decir si su interes es de 7% el dato ingresado es = 0.07 (7/100)</h4>  <!--Aqui coloque esta nota para que asi no haya problema al momento de calcular -->
+<h4> Al momento de ingresar los meses estos de deben dividir dentro de 12</h4>
+<h4>Es decir si son cuotas en 5 meses el dato a ingresar es =0.41 aprox. 0.42 (5/12) ya que nos estamos tomando un año completo</h4>
+
+<br>
+<br>
+<label> Capital: </label>
+<input type="number" name="" id="Capital" autofocus placeholder="Escribe el monto a pagar">
+ 
+<br>
+<br>
+<label> Tasa de interés: </label>
+<input type="number" name="" id="Interes" placeholder="Tasa de interés">
+<br>
+<br>
+<label> Cantidad de Meses a pagar: </label>
+<input type="number" name="" id="Tiempo" placeholder="Meses a pagar">
+<br>
+<br>
+<button type="button" onclick="multiplicar();">Calcular</button>
+ 
+<p>La Cuota mensual a pagar de Interés es de: <span id="el-resultado"></span></p>
+
+ 
+</form>
+<script type="text/javascript"src=main.js>
+</script>
+</body>
+</html>
